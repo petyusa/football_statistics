@@ -1,0 +1,15 @@
+{
+    "extends": ["eslint:recommended", "airbnb-base"],
+    "rules": {
+        "class-methods-use-this":"off",
+        "comma-dangle": "off",
+        "indent": ["warn", 4, { "SwitchCase": 1 }],
+        "linebreak-style": 0,
+        "no-console": "off",
+        "no-underscore-dangle":"off"
+    },
+    "globals": {
+        "document": true,
+        "window": true
+    }
+}
