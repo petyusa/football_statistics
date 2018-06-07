@@ -1,0 +1,19 @@
+.nav {
+    &__list {
+        list-style: none;
+        font-size: 1.5rem;
+
+        & > * {
+            display: inline-block;
+        }
+    }
+
+    &__list-item {
+        margin-right: 1rem;
+
+        &:hover {
+            color: lighten($color-grey-font, 50%);
+            cursor: pointer;
+        }
+    }
+}

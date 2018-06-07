@@ -1,0 +1,406 @@
+{
+    "leagueCaption": "World Cup 2018 Russia",
+    "matchday": 1,
+    "standings": {
+        "A": [
+            {
+                "group": "A",
+                "rank": 0,
+                "team": "Russia",
+                "teamId": 808,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "A",
+                "rank": 0,
+                "team": "Saudi Arabia",
+                "teamId": 801,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "A",
+                "rank": 0,
+                "team": "Egypt",
+                "teamId": 825,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "A",
+                "rank": 0,
+                "team": "Uruguay",
+                "teamId": 758,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ],
+        "B": [
+            {
+                "group": "B",
+                "rank": 0,
+                "team": "Morocco",
+                "teamId": 815,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "B",
+                "rank": 0,
+                "team": "Iran",
+                "teamId": 840,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "B",
+                "rank": 0,
+                "team": "Portugal",
+                "teamId": 765,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "B",
+                "rank": 0,
+                "team": "Spain",
+                "teamId": 760,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ],
+        "C": [
+            {
+                "group": "C",
+                "rank": 0,
+                "team": "France",
+                "teamId": 773,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "C",
+                "rank": 0,
+                "team": "Australia",
+                "teamId": 779,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "C",
+                "rank": 0,
+                "team": "Peru",
+                "teamId": 832,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "C",
+                "rank": 0,
+                "team": "Denmark",
+                "teamId": 782,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ],
+        "D": [
+            {
+                "group": "D",
+                "rank": 0,
+                "team": "Argentina",
+                "teamId": 762,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "D",
+                "rank": 0,
+                "team": "Iceland",
+                "teamId": 1066,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "D",
+                "rank": 0,
+                "team": "Croatia",
+                "teamId": 799,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "D",
+                "rank": 0,
+                "team": "Nigeria",
+                "teamId": 776,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ],
+        "E": [
+            {
+                "group": "E",
+                "rank": 0,
+                "team": "Costa Rica",
+                "teamId": 793,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "E",
+                "rank": 0,
+                "team": "Serbia",
+                "teamId": 780,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "E",
+                "rank": 0,
+                "team": "Brazil",
+                "teamId": 764,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "E",
+                "rank": 0,
+                "team": "Switzerland",
+                "teamId": 788,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ],
+        "F": [
+            {
+                "group": "F",
+                "rank": 0,
+                "team": "Germany",
+                "teamId": 759,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "F",
+                "rank": 0,
+                "team": "Mexico",
+                "teamId": 769,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "F",
+                "rank": 0,
+                "team": "Sweden",
+                "teamId": 792,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "F",
+                "rank": 0,
+                "team": "Korea Republic",
+                "teamId": 772,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ],
+        "G": [
+            {
+                "group": "G",
+                "rank": 0,
+                "team": "Belgium",
+                "teamId": 805,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "G",
+                "rank": 0,
+                "team": "Panama",
+                "teamId": 1836,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "G",
+                "rank": 0,
+                "team": "Tunisia",
+                "teamId": 802,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "G",
+                "rank": 0,
+                "team": "England",
+                "teamId": 770,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ],
+        "H": [
+            {
+                "group": "H",
+                "rank": 0,
+                "team": "Poland",
+                "teamId": 794,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "H",
+                "rank": 0,
+                "team": "Senegal",
+                "teamId": 804,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "H",
+                "rank": 0,
+                "team": "Colombia",
+                "teamId": 818,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            },
+            {
+                "group": "H",
+                "rank": 0,
+                "team": "Japan",
+                "teamId": 766,
+                "playedGames": 0,
+                "crestURI": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg",
+                "points": 0,
+                "goals": 0,
+                "goalsAgainst": 0,
+                "goalDifference": 0
+            }
+        ]
+    }
+}

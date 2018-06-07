@@ -1,0 +1,57 @@
+.league-table__container {
+    background-color: lighten(#eee, 10%);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px #777;
+}
+
+.league-table {
+    width: 100%;
+    border: 0;
+    
+    &__heading {
+    }
+
+    &__body {
+    }
+
+    &__row {
+        font-size: 1.5rem;
+
+        & > *:not(:nth-child(2)) {
+            text-align: center;
+        }
+
+        & > * {
+            padding: 0.5rem;
+        }
+
+        & > * > * {
+            vertical-align: middle;
+        }
+
+        &:nth-child(even) {
+            background-color: $color-grey-light-2;
+        }
+
+        &:hover {
+            background-color: $color-grey-light-4;
+            cursor: pointer;
+        }
+    }
+
+    &__team-logo {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 0.5rem;
+        text-align: center;
+
+        img {
+            max-width: 2rem;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+        }
+    }
+}

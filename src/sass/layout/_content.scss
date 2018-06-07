@@ -1,0 +1,26 @@
+.content {
+    grid-area: c;
+    padding: 1.5rem 2rem;
+    background-color: #eee;
+
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    grid-template-columns: max-content 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.js-league-table {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.js-league-table-1 {
+background-color: blue;
+}
+
+.js-league-table-2 {
+    background-color: red;
+}
+
+.js-league-table-3 {
+    background-color: yellow;
+}

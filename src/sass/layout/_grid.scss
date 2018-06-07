@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "s c c c"
+                         "s c c c"
+                         "f f f f";
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-columns: minmax(250px, max-content) 1fr;
+}

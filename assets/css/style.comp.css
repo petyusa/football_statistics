@@ -1,0 +1,212 @@
+.gr {
+  color: #028090;
+  color: #E4FDE1;
+  color: #456990;
+  color: #F45B69;
+  color: #0A1128;
+  color: #001F54;
+  color: #034078;
+  color: #1282A2;
+  color: #FEFCFB; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+::selection {
+  background-color: #777;
+  color: #fff; }
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg); } }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444; }
+
+.heading {
+  text-transform: uppercase; }
+
+.heading-primary {
+  font-size: 3rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem; }
+
+.heading-secondary {
+  font-size: 2rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-weight: 400; }
+
+.hidden {
+  display: none; }
+
+.fixtures {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px #777; }
+  .fixtures .fixtures-list {
+    list-style: none; }
+    .fixtures .fixtures-list__item {
+      font-size: 1.1rem;
+      background-color: white;
+      padding: 1rem;
+      box-shadow: 0 1px 3px #777;
+      border-radius: 4px;
+      width: 100%;
+      margin: 0 auto 5px auto;
+      display: flex;
+      justify-content: space-between; }
+    .fixtures .fixtures-list .fixture__homeTeam {
+      width: 16rem;
+      text-align: right; }
+    .fixtures .fixtures-list .fixture__away-team {
+      width: 16rem; }
+
+.league-table__container {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px #777; }
+
+.league-table {
+  width: 100%;
+  border: 0; }
+  .league-table__row {
+    font-size: 1.5rem; }
+    .league-table__row > *:not(:nth-child(2)) {
+      text-align: center; }
+    .league-table__row > * {
+      padding: 0.5rem; }
+    .league-table__row > * > * {
+      vertical-align: middle; }
+    .league-table__row:nth-child(even) {
+      background-color: #f4f2f2; }
+    .league-table__row:hover {
+      background-color: #ccc;
+      cursor: pointer; }
+  .league-table__team-logo {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    text-align: center; }
+    .league-table__team-logo img {
+      max-width: 2rem;
+      max-height: 100%;
+      height: auto;
+      width: auto; }
+
+.nav__list {
+  list-style: none;
+  font-size: 1.5rem; }
+  .nav__list > * {
+    display: inline-block; }
+
+.nav__list-item {
+  margin-right: 1rem; }
+  .nav__list-item:hover {
+    color: white;
+    cursor: pointer; }
+
+.spinner {
+  position: relative; }
+
+.spinner:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border-top: 4px solid #114B5F;
+  border-right: 4px solid transparent;
+  animation: spinner 0.9s linear infinite; }
+
+.content {
+  grid-area: c;
+  padding: 1.5rem 2rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-columns: max-content 1fr 1fr;
+  grid-gap: 1rem; }
+
+.js-league-table {
+  grid-area: 1 / 1 / 4 / 2; }
+
+.js-league-table-1 {
+  background-color: blue; }
+
+.js-league-table-2 {
+  background-color: red; }
+
+.js-league-table-3 {
+  background-color: yellow; }
+
+.footer {
+  grid-area: f;
+  background-color: #24292e;
+  color: #c8c8c8;
+  display: flex;
+  align-items: center; }
+  .footer__text {
+    font-size: 1.4rem;
+    margin: 0.6rem 2rem;
+    font-weight: 400; }
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "h h h h" "s c c c" "s c c c" "f f f f";
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-columns: minmax(250px, max-content) 1fr; }
+
+.header {
+  background-color: #24292e;
+  color: #c8c8c8;
+  grid-area: h;
+  display: flex;
+  align-items: center; }
+  .header__brand {
+    font-size: 2.4rem;
+    margin: 1rem 2rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+
+.side-bar {
+  background-color: #333;
+  grid-area: s; }
+  .side-bar__list {
+    list-style: none;
+    font-size: 1.5rem; }
+  .side-bar__list-item {
+    color: #ccc;
+    padding: 1.5rem 3rem;
+    transition: all 0.4s; }
+    .side-bar__list-item:not(:last-child) {
+      margin-bottom: 0.5rem; }
+    .side-bar__list-item:hover {
+      background-color: #1b7999;
+      color: white;
+      cursor: pointer; }
+    .side-bar__list-item--active {
+      background-color: #1b7999;
+      color: white; }

@@ -1,0 +1,29 @@
+.side-bar{
+    background-color: $color-grey-dark-1;
+    grid-area: s;
+
+    &__list {
+        list-style: none;
+        font-size: 1.5rem;
+    }
+
+    &__list-item {
+        color: $color-grey-light-4;
+        padding: 1.5rem 3rem;
+        transition: all 0.4s;
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+        &:hover {
+            background-color: $color-primary-light;
+            color: white;
+            cursor: pointer;
+        }
+        
+        &--active {
+            background-color: $color-primary-light;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.footer {
+    grid-area: f;
+
+    background-color: $color-black;
+    color: $color-grey-font;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-size: 1.4rem;
+        margin: 0.6rem 2rem;
+        font-weight: 400;
+    }
+}
