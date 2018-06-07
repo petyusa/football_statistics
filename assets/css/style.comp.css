@@ -18,6 +18,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -69,12 +72,14 @@ body {
       width: 100%;
       margin: 0 auto 5px auto;
       display: flex;
-      justify-content: space-between; }
-    .fixtures .fixtures-list .fixture__homeTeam {
-      width: 16rem;
-      text-align: right; }
-    .fixtures .fixtures-list .fixture__away-team {
+      justify-content: center; }
+    .fixtures .fixtures-list .fixture__homeTeam, .fixtures .fixtures-list .fixture__away-team {
       width: 16rem; }
+    .fixtures .fixtures-list .fixture__homeTeam {
+      text-align: right; }
+    .fixtures .fixtures-list .fixture__result {
+      margin: 0 0.5rem;
+      width: 2rem; }
 
 .league-table__container {
   background-color: white;
@@ -86,7 +91,7 @@ body {
   width: 100%;
   border: 0; }
   .league-table__row {
-    font-size: 1.5rem; }
+    font-size: 1.4rem; }
     .league-table__row > *:not(:nth-child(2)) {
       text-align: center; }
     .league-table__row > * {
@@ -100,8 +105,8 @@ body {
       cursor: pointer; }
   .league-table__team-logo {
     display: inline-block;
-    height: 2rem;
-    width: 2rem;
+    height: 1.4rem;
+    width: 1.4rem;
     margin-right: 0.5rem;
     text-align: center; }
     .league-table__team-logo img {
@@ -147,18 +152,19 @@ body {
   grid-template-rows: repeat(3, max-content);
   grid-template-columns: max-content 1fr 1fr;
   grid-gap: 1rem; }
+  @media only screen and (max-width: 1640px) {
+    .content {
+      grid-template-columns: max-content 1fr; } }
+  @media only screen and (max-width: 600px) {
+    .content {
+      display: flex;
+      flex-direction: column; } }
 
 .js-league-table {
   grid-area: 1 / 1 / 4 / 2; }
-
-.js-league-table-1 {
-  background-color: blue; }
-
-.js-league-table-2 {
-  background-color: red; }
-
-.js-league-table-3 {
-  background-color: yellow; }
+  @media only screen and (max-width: 600px) {
+    .js-league-table {
+      width: 100%; } }
 
 .footer {
   grid-area: f;
@@ -178,6 +184,13 @@ body {
   grid-template-areas: "h h h h" "s c c c" "s c c c" "f f f f";
   grid-template-rows: auto 1fr 1fr auto;
   grid-template-columns: minmax(250px, max-content) 1fr; }
+  @media only screen and (max-width: 1240px) {
+    .container {
+      grid-template-areas: "h h h h" "c c c c" "c c c c" "f f f f"; } }
+  @media only screen and (max-width: 600px) {
+    .container {
+      display: flex;
+      flex-direction: column; } }
 
 .header {
   background-color: #24292e;
@@ -190,10 +203,34 @@ body {
     margin: 1rem 2rem;
     font-weight: 400;
     text-transform: uppercase; }
+  .header__nav-button {
+    display: none;
+    margin-left: auto;
+    padding: 2rem; }
+    @media only screen and (max-width: 1240px) {
+      .header__nav-button {
+        display: inline-block; } }
 
 .side-bar {
   background-color: #333;
-  grid-area: s; }
+  grid-area: s;
+  transition-property: visibility, opacity;
+  transition-duration: 0s, 1s; }
+  @media only screen and (max-width: 1240px) {
+    .side-bar--collapsed {
+      opacity: 0;
+      visibility: hidden;
+      transition-property: opacity, visibility;
+      transition-duration: 1s, 0s;
+      transition-delay: 0s, 1s; } }
+  @media only screen and (max-width: 1240px) {
+    .side-bar {
+      position: absolute;
+      top: 6rem;
+      left: 0; } }
+  @media only screen and (max-width: 600px) {
+    .side-bar {
+      width: 100%; } }
   .side-bar__list {
     list-style: none;
     font-size: 1.5rem; }

@@ -11,4 +11,14 @@
         font-weight: 400;
         text-transform: uppercase;
     }
+
+    &__nav-button {
+        display: none;
+        margin-left: auto;
+        padding: 2rem;
+
+        @media only screen and (max-width: 1240px) {
+            display: inline-block;
+        }
+    }
 }

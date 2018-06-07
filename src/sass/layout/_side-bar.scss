@@ -2,6 +2,29 @@
     background-color: $color-grey-dark-1;
     grid-area: s;
 
+    transition-property: visibility, opacity;
+    transition-duration: 0s, 1s;
+    
+    &--collapsed {
+        @media only screen and (max-width: 1240px) {
+            opacity: 0;
+            visibility: hidden;
+            transition-property: opacity, visibility;
+            transition-duration: 1s, 0s;
+            transition-delay: 0s, 1s;
+        }
+    }
+
+    @media only screen and (max-width: 1240px) {
+        position: absolute;
+        top: 6rem;
+        left: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
+
     &__list {
         list-style: none;
         font-size: 1.5rem;

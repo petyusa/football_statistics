@@ -7,20 +7,21 @@
     grid-template-rows: repeat(3, max-content);
     grid-template-columns: max-content 1fr 1fr;
     grid-gap: 1rem;
+
+    @media only screen and (max-width: 1640px) {
+        grid-template-columns: max-content 1fr;
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .js-league-table {
     grid-area: 1 / 1 / 4 / 2;
-}
 
-.js-league-table-1 {
-background-color: blue;
-}
-
-.js-league-table-2 {
-    background-color: red;
-}
-
-.js-league-table-3 {
-    background-color: yellow;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
 }

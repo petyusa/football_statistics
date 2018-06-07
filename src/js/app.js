@@ -55,6 +55,16 @@ table.addEventListener('click', (e) => {
     api.getTeam(teamId).then(console.log);
 });
 
+const navButton = document.querySelector('.header__nav-button');
+navButton.addEventListener('click', () => {
+    const sideBar2 = document.querySelector('.side-bar');
+    if (sideBar2.classList.contains('side-bar--collapsed')) {
+        sideBar2.classList.remove('side-bar--collapsed');
+    } else {
+        sideBar2.classList.add('side-bar--collapsed');
+    }
+});
+
 // sideBar.addEventListener('click', (e) => {
 //     if (e.target.className === 'side-bar__list-item') {
 //         const competitionId = e.target.getAttribute('data-competitionId');

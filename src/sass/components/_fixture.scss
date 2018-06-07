@@ -18,21 +18,23 @@
             margin: 0 auto 5px auto;
 
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
         }
 
         .fixture {
             
-            &__homeTeam {
+            &__homeTeam,
+            &__away-team {
                 width: 16rem;
+            }
+            
+            &__homeTeam {
                 text-align: right;
             }
 
             &__result {
-            }
-
-            &__away-team {
-                width: 16rem;
+                margin: 0 0.5rem;
+                width: 2rem;
             }
         }
     }
