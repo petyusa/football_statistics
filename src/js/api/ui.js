@@ -1,13 +1,17 @@
 class UI {
     loadSideBar(competitions) {
-        const sideBar = document.querySelector('.js-side-bar');
+        const sideBarContainer = document.querySelector('.js-side-bar');
+        const sideBar = document.createElement('ul');
+        sideBar.classList.add('side-bar__list');
         competitions.forEach((competition) => {
-            sideBar.innerHTML += `
-                <li class='side-bar__list-item' data-competitionId='${competition.id}' data-currentMatchday='${competition.currentMatchday}'>
-                    ${competition.caption}
-                </li>
-                `;
+            const listElement = document.createElement('li');
+            listElement.textContent = competition.caption;
+            listElement.classList.add('side-bar__list-item');
+            listElement.setAttribute('data-competitionId', competition.id);
+            listElement.setAttribute('data-currentMatchday', competition.currentMatchday);
+            sideBar.appendChild(listElement);
         });
+        sideBarContainer.appendChild(sideBar);
     }
 
     loadCompetition(competition) {

@@ -2,6 +2,7 @@ import Http from './api/http';
 import UI from './api/ui';
 import LeagueTable from './models/leagueTable';
 import Fixture from './models/fixture';
+import Player from './models/player';
 
 const api = new Http('aea65a64efe24cd78a58c4de32a16c64');
 const ui = new UI();
@@ -32,15 +33,14 @@ sideBar.addEventListener('click', (e) => {
                     ui.loadFixtures(fixtures, '.js-current-fixtures');
                 })
                 .then(() => {
-                    api.getFixturesByCompetition(competitionId, { matchday: 1 })
-                        .then((res) => {
-                            const fixtures = [];
-                            res.fixtures.forEach((fix) => {
-                                fixtures.push(new Fixture(fix));
-                            });
-                            ui.loadFixtures(fixtures, '.js-next-fixtures');
-                            ui.hideLoader();
+                    api.getFixturesByCompetition(competitionId, { matchday: 1 }).then((res) => {
+                        const fixtures = [];
+                        res.fixtures.forEach((fix) => {
+                            fixtures.push(new Fixture(fix));
                         });
+                        ui.loadFixtures(fixtures, '.js-next-fixtures');
+                        ui.hideLoader();
+                    });
                 });
         });
 });
@@ -52,32 +52,27 @@ table.addEventListener('click', (e) => {
         return;
     }
     const teamId = team.getAttribute('data-team-id');
-    api.getTeam(teamId).then(console.log);
+    api.getTeam(teamId)
+        .then((res) => {
+            console.log(res.name);
+        })
+        .then(() => {
+            api.getPlayers(teamId).then((res) => {
+                const players = [];
+                res.players.forEach((item) => {
+                    players.push(new Player(item));
+                });
+                console.log(players);
+            });
+        });
 });
 
 const navButton = document.querySelector('.header__nav-button');
 navButton.addEventListener('click', () => {
     const sideBar2 = document.querySelector('.side-bar');
-    if (sideBar2.classList.contains('side-bar--collapsed')) {
-        sideBar2.classList.remove('side-bar--collapsed');
+    if (sideBar2.classList.contains('side-bar--open')) {
+        sideBar2.classList.remove('side-bar--open');
     } else {
-        sideBar2.classList.add('side-bar--collapsed');
+        sideBar2.classList.add('side-bar--open');
     }
 });
-
-// sideBar.addEventListener('click', (e) => {
-//     if (e.target.className === 'side-bar__list-item') {
-//         const competitionId = e.target.getAttribute('data-competitionId');
-//         const mydiv = document.getElementById('mydiv');
-//         api.getLeagueTable(competitionId, 30).then((res) => {
-//             mydiv.innerHTML = `
-//             <h1>${res.leagueCaption}</h1>
-//             <ul>
-//             `;
-//             for (let i = 0; i < res.standing.length; i += 1) {
-//                 mydiv.innerHTML += `
-//                     <li>
-//                         ${res.standing[i].teamName} ${res.standing[i].points}
-//                     </li>
-//                 fhtgr
-

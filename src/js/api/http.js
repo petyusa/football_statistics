@@ -70,6 +70,11 @@ class Http {
         }
         return this._get(url);
     }
+
+    getPlayers(teamId) {
+        const url = this.urlResolver.getUrl('players', { teamId });
+        return this._get(url);
+    }
 }
 
 export default Http;
