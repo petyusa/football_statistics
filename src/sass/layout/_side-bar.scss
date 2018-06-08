@@ -1,28 +1,23 @@
-.side-bar{
+.side-bar {
     background-color: $color-grey-dark-1;
     grid-area: s;
 
-    transition-property: visibility, opacity;
-    transition-duration: 0s, 1s;
-    
-    &--collapsed {
-        @media only screen and (max-width: 1240px) {
-            opacity: 0;
-            visibility: hidden;
-            transition-property: opacity, visibility;
-            transition-duration: 1s, 0s;
-            transition-delay: 0s, 1s;
+    transition: max-height 2s;
+
+    @include for-tablet-landscape {
+        max-height: 0;
+
+        & * {
+            display: none;
         }
     }
 
-    @media only screen and (max-width: 1240px) {
-        position: absolute;
-        top: 6rem;
-        left: 0;
-    }
+    &--open {
+        max-height: 100%;
 
-    @media only screen and (max-width: 600px) {
-        width: 100%;
+        & * {
+            display: block;
+        }
     }
 
     &__list {
@@ -43,7 +38,7 @@
             color: white;
             cursor: pointer;
         }
-        
+
         &--active {
             background-color: $color-primary-light;
             color: white;

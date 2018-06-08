@@ -9,12 +9,8 @@
 html {
     font-size: 62.5%;
     
-    @media only screen and (max-width: 1240px) {
-        // font-size: 50%;
-    }
-
-    @media only screen and (max-width: 600px) {
-        font-size: 50%;
+    @include for-mobile {
+        font-size: 55%;
     }
 }
 

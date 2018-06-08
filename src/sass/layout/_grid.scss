@@ -3,22 +3,21 @@
     min-height: 100vh;
 
     display: grid;
-    grid-template-areas: "h h h h"
-                         "s c c c"
-                         "s c c c"
-                         "f f f f";
+    grid-template-areas:
+        'h h h h'
+        's c c c'
+        's c c c'
+        'f f f f';
     grid-template-rows: auto 1fr 1fr auto;
     grid-template-columns: minmax(250px, max-content) 1fr;
 
-    @media only screen and (max-width: 1240px) {
-        grid-template-areas: "h h h h"
-                         "c c c c"
-                         "c c c c"
-                         "f f f f";
-    }
-
-    @media only screen and (max-width: 600px) {
-        display: flex;
-        flex-direction: column;
+    @include for-tablet-landscape {
+        grid-template-areas:
+            'h h h h'
+            's s s s'
+            'c c c c'
+            'f f f f';
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 1fr;
     }
 }

@@ -31,9 +31,9 @@ class Standing {
                 <td>${this.wins}</td>
                 <td>${this.draws}</td>
                 <td>${this.losses}</td>
-                <td>${this.goals}</td>
-                <td>${this.goalsAgainst}</td>
-                <td>${this.goalDifference}</td>
+                <td class="hidden-for-mobile">${this.goals}</td>
+                <td class="hidden-for-mobile">${this.goalsAgainst}</td>
+                <td class="hidden-for-mobile">${this.goalDifference}</td>
                 <td>${this.points} </td>
             </tr>
             `;

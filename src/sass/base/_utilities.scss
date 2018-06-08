@@ -1,3 +1,13 @@
 .hidden {
     display: none;
 }
+
+.hidden-for-mobile {
+    @include for-mobile {
+        display:none !important;
+        width:0 !important;
+        height:0 !important;
+        opacity:0 !important;
+        visibility: collapse !important;
+    }
+}

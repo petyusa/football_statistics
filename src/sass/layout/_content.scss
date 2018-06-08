@@ -8,20 +8,22 @@
     grid-template-columns: max-content 1fr 1fr;
     grid-gap: 1rem;
 
-    @media only screen and (max-width: 1640px) {
+    
+    @include for-medium-desktop {
         grid-template-columns: max-content 1fr;
     }
 
-    @media only screen and (max-width: 600px) {
+    @include for-tablet-portrait {
         display: flex;
         flex-direction: column;
     }
+
+    // @media only screen and (max-width: 600px) {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
 }
 
 .js-league-table {
     grid-area: 1 / 1 / 4 / 2;
-
-    @media only screen and (max-width: 600px) {
-        width: 100%;
-    }
 }

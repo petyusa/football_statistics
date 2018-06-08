@@ -15,5 +15,9 @@
             color: lighten($color-grey-font, 50%);
             cursor: pointer;
         }
+
+        @include for-mobile {
+            display: none;
+        }
     }
 }

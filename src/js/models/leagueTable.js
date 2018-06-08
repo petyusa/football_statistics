@@ -34,9 +34,9 @@ class LeagueTable {
                     <th title="Wins">W</th>
                     <th title="Draws">D</th>
                     <th title="Losses">L</th>
-                    <th title="Gols For">GF</th>
-                    <th title="Goals Against">GA</th>
-                    <th title="Goal Difference">GD</th>
+                    <th title="Gols For" class="hidden-for-mobile">GF</th>
+                    <th title="Goals Against" class="hidden-for-mobile">GA</th>
+                    <th title="Goal Difference" class="hidden-for-mobile">GD</th>
                     <th title="Points">P</th>
                 </tr>  
             </thead>
